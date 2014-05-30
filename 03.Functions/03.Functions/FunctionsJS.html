@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JS Functions</title>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+        p {
+            display: inline-block;
+            margin: 0;
+        }
+        textarea {
+            width: 50%;
+            height: 100px;
+            display: block;
+        }
+    </style>
+    <script src="functions-js.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>
+                Write a function that returns the last digit of given integer as an English word. Examples: 512  "two", 1024  "four", 12309  "nine"
+                <br />
+                <label for="lastDigitOfNumber">Enter number:</label>
+                <input id="lastDigitOfNumber" type="number" />
+                <button onclick="getLastDigitName()" >Name last digit </button>
+                <p id="lastDigit"></p>
+            </li>
+            <li>
+                Write a function that reverses the digits of given decimal number. Example: 256  652
+                 <br />
+                <label for="originalNumber">Enter number:</label>
+                <input id="originalNumber" type="number" />
+                <button onclick="reverseNumber()" >Reverse number </button>
+                <p id="reversedNumber"></p>
+            </li>
+            <li>
+                Write a function that finds all the occurrences of word in a text
+                <ul>
+                    <li>The search can be case sensitive or case insensitive </li>
+                     <li>Use function overloading</li>
+                </ul>
+                <textarea id="inputText" placeholder="Add some text here to try the function"></textarea>
+                <label for="word">Search for:</label>
+                <input id="word" type="text" />
+                <label for="caseOn">Case Sensitive:</label>
+                <input id="caseOn" type="radio" name="choice" value="On" checked="checked" />
+                <label for="caseOff">Case Insensitive:</label>
+                <input id="caseOff" type="radio" name="choice" value="Off" />
+                <button onclick="getWordOccurrences()" >Show occurrences </button>
+                <p id="wordOccurrences"></p>
+            </li>
+            <li>
+                Write a function to count the number of divs on the web page. NOTE: Note that there are 2 div elements, that cannot be removed, so you can see the result.
+                <button onclick="addDivElement()" >Add Div Element </button>
+                <button onclick="removeDivElement()" > Remove Div Element </button>
+                <button onclick="countDivElements()" > Count Div Elements </button>
+                <p id="divElementscount"></p>
+                <div id="divContainer" ></div>
+            </li>
+             <li>
+                Write a function that counts how many times given number appears in given array. Write a test function to check if the function is working correctly.
+                <label for="arrayOfNumbers">Enter array of numbers:</label>
+                <input id="arrayOfNumbers" type="text" />
+                 <label for="enteredNumber">Enter number: </label>
+                <input id="enteredNumber" type="number" />
+                <button onclick="getNumberOccurrences()" > Count number occurrences </button>
+                <button onclick="testGetNumOccur()" > Test function </button>
+                <p id="numberOccurrences"></p>
+                <p id="testResult"></p>
+            </li>
+            <li>
+                Write a function that checks if the element at given position in given array of integers is bigger than its two neighbors (when such exist).
+                <label for="givenArray">Enter array of numbers:</label>
+                <input id="givenArray" type="text" />
+                <label for="atPosition">Enter index of element: </label>
+                <input id="atPosition" type="number" />
+                <button onclick="checkPositionNeighbours()" > Is Element Bigger? </button>
+                <p id="biggerElement"></p>
+            </li>
+            <li>
+                Write a function that returns the index of the first element in array that is bigger than its neighbors, or -1, if there’s no such element.
+                <ul><li> Use the function from the previous exercise.</li></ul>
+                <label for="inputArray">Enter array of numbers:</label>
+                <input id="inputArray" type="text" />
+                <button onclick="findFirstBiggerElement()" > Find First Number </button>
+                <p id="firstBiggerNumber"></p>
+
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

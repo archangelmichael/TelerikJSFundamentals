@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JS Arrays</title>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+        p {
+            display: inline-block;
+            margin: 0;
+        }
+    </style>
+    <script src="arrays-js.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>Write a script that allocates array of 20 integers and initializes each element by its index multiplied by 5. Print the obtained array on the console.
+                <br />
+                <button onclick="getArray()" >Print Array </button>
+                <p id="arrayMultipliedBy5"></p>
+            </li>
+            <li> Write a script that compares two char arrays lexicographically (letter by letter).
+                <br />
+                <label for="charArray1">Enter first char array:</label>
+                <input id="charArray1" type="text" placeholder="Example: a, B, J, k, h"/>
+                <label for="charArray2">Enter second char array:</label>
+                <input id="charArray2" type="text" placeholder="Example: d, b, v, k, y"/>
+                <button onclick="compareArraysLexicographically()" >Find Matches</button>
+                <br />
+                <p id="biggerArrayResult"></p>
+            </li>
+            <li> Write a script that finds the maximal sequence of equal elements in an array. Example: {2, 1, 1, 2, 3, 3, 2, 2, 2, 1}  {2, 2, 2}.
+                <br />
+                <label for="enteredArray">Enter array:</label>
+                <input id="enteredArray" type="text" placeholder="Example: 4, 1, 1, 4, 2" />
+                <button onclick="getSequence()" >Find sequence</button>
+                <br />
+                <p id="sequenceOfEqualElements"></p>
+            </li>
+            <li> Write a script that finds the maximal increasing sequence in an array. Example: {3, 2, 3, 4, 2, 2, 4}  {2, 3, 4}.
+                <br />
+                <label for="entered">Enter array:</label>
+                <input id="entered" type="text" placeholder="Example: 4, 1, 1, 4, 2" />
+                <button onclick="findMaxIncreasingSequence()" >Find sequence</button>
+                <br />
+                <p id="increasingSequence"></p>
+            </li>
+            <li> Sorting an array means to arrange its elements in increasing order. Write a script to sort an array. Use the "selection sort" algorithm: Find the smallest element, move it at the first position, find the smallest from the rest, move it at the second position, etc.Hint: Use a second array.
+                <br />
+                <label for="enteredElements">Enter array:</label>
+                <input id="enteredElements" type="text" placeholder="Example: 4, 1, 1, 4, 2" />
+                <button onclick="sortArray()" >Sort array</button>
+                <br />
+                <p id="sordedArray"></p>
+            </li>
+            <li>
+                Write a program that finds the most frequent number in an array. Example:	{4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3}  4 (5 times)
+                <br />
+                <label for="numbersArray">Enter array:</label>
+                <input id="numbersArray" type="text" placeholder="Example: 4, 1, 1, 4, 2" />
+                <button onclick="findMostFrequentNumber()" >Find Most Frequent Number</button>
+                <br />
+                <p id="mostFrequentNumber"></p>
+            </li>
+            <li>
+                Write a program that finds the index of given element in a sorted array of integers by using the binary search algorithm (find it in Wikipedia).
+                <br />
+                <label for="unsortedArray">Enter array:</label>
+                <input id="unsortedArray" type="text" placeholder="Example: 4, 1, 1, 4, 2" />
+                <label for="searchedElement">Enter element to search for:</label>
+                <input id="searchedElement" type="text"  />
+                <button onclick="searchElement()" >Find Index</button>
+                <br />
+                <p id="indexOfElement"></p>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Operators And Expressions</title>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+        p {
+            display: inline-block;
+            margin: 0;
+        }
+    </style>
+    <script src="operators-expressions.js" type="text/javascript" ></script>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>Write an expression that checks if given integer is odd or even. 
+                <br />
+                <label for="oddOrEvenInteger">Enter integer:</label>
+                <input id="oddOrEvenInteger" type="number" />
+                <button onclick="isNumberOddOrEven()" >Check Number </button>
+                <p id="oodOrEvenResult"></p>
+            </li>
+            <li>Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.
+                <br />
+                <label for="divisibleBy5And7">Enter integer:</label>
+                <input id="divisibleBy5And7" type="number" />
+                <button onclick="isDivisibleBy5And7()" >Check Number </button>
+                <p id="divisibleBy5And7Result"> </p>
+            </li>
+            <li>Write an expression that calculates rectangle’s area by given width and height.
+                <br />
+                <label for="rectangleWidth">Enter rectangle width:</label>
+                <input id="rectangleWidth" type="number" />
+                <label for="rectangleHeight">Enter rectangle height:</label>
+                <input id="rectangleHeight" type="number" />
+                <button onclick="calculateRectangleArea()" >Calculate Area </button>
+                <p id="rectangleArea"> </p>
+            </li>
+            <li>Write an expression that checks for given integer if its third digit (right-to-left) is 7. E. g. 1732  true.
+                <br />
+                <label for="thirdDigitCheck">Enter number:</label>
+                <input id="thirdDigitCheck" type="number" />
+                <button onclick="checkThirdDigit()" >Check if third digit is 7? </button>
+                <p id="thirdDigitCheckResult"> </p>
+            </li>
+            <li>Write a boolean expression for finding if the bit 3 (counting from 0) of a given integer is 1 or 0.
+                <br />
+                <label for="thirdBitCheck">Enter number:</label>
+                <input id="thirdBitCheck" type="number" />
+                <button onclick="checkThirdBit()" >Check third bit? </button>
+                <p id="thirdBitResult"> </p>
+            </li>
+            <li>Write an expression that checks if given print (x,  y) is within a circle K(O, 5).
+                <br />
+                <label for="xRange">Enter range X:</label>
+                <input id="xRange" type="number" />
+                <label for="yRange">Enter range Y:</label>
+                <input id="yRange" type="number" />
+                <button onclick="isPointInCircle()" > Check where point lies. </button>
+                <p id="isPointWithinCircle"> </p>
+            </li>
+            <li>Write an expression that checks if given positive integer number n (n ≤ 100) is prime. E.g. 37 is prime.
+                <br />
+                <label for="primeNumber">Enter range X:</label>
+                <input id="primeNumber" type="number" />
+                <button onclick="checkPrimeNumber()" > Check if number is prime. </button>
+                <p id="isNumberPrime"> </p>
+            </li>
+            <li>Write an expression that calculates trapezoid's area by given sides a and b and height h.
+                <br />
+                <label for="SideA">Enter side a:</label>
+                <input id="SideA" type="number" />
+                <label for="SideB">Enter side b:</label>
+                <input id="SideB" type="number" />
+                <label for="Height">Enter height:</label>
+                <input id="Height" type="number" />
+                <button onclick="calculateTrapezoidArea()" >Calculate Area </button>
+                <p id="TrapeziodArea"> </p>
+            </li>
+            <li>Write an expression that checks for given point (x, y) if it is within the circle K( (1,1), 3) and out of the rectangle R(top=1, left=-1, width=6, height=2).
+                <br />
+                <label for="RangeX">Enter range X:</label>
+                <input id="RangeX" type="number" />
+                <label for="RangeY">Enter range Y:</label>
+                <input id="RangeY" type="number" />
+                <button onclick="calculatePointPosition()" > Check where point lies. </button>
+                <p id="PointPosition"> </p>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

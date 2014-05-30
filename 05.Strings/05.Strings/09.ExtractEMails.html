@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Write a function for extracting all email addresses from given text. All substrings that match the format <identifier>@<host>…<domain> 
+        should be recognized as emails. Return the emails as array of strings.-->
+    <title>Task 9</title>
+    <script>
+        function extractMailFromText(text) {
+            var reg = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi;
+            return text.match(reg);
+        }
+
+        function onGetAllEmails() {
+            var text = document.getElementById('text').value;
+            var emails = extractMailFromText(text);
+
+            if (emails.length == 0) {
+                document.getElementById('result').innerHTML = "No emails found";
+                return;
+            }
+
+            document.getElementById('result').innerHTML = "Emails list :";
+            var ol = document.createElement('ol');
+
+            for (var i = 0; i < emails.length; i++) {
+                var li = document.createElement('li');
+                li.innerHTML = emails[i];
+                ol.appendChild(li);
+            }
+
+            document.getElementById('result').appendChild(ol);
+        }
+
+    </script>
+</head>
+<body>
+    <textarea id="text">This is sample asd@av.com text to show you that you here@there.where can extract all email@domain.com mails in this style (answer is 3) </textarea>
+    <br />
+    <button onclick="onGetAllEmails()">Get all emails!</button>
+    <div id="result" ></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Loops</title>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+        p {
+            display: inline-block;
+            margin: 0;
+        }
+    </style>
+    <script src="loops.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>Write a script that prints all the numbers from 1 to N. 
+                <br />
+                <label for="numberN">Enter number N:</label>
+                <input id="numberN" type="number" />
+                <button onclick="printNumbers()" >Print Numbers </button>
+                <br />
+                <p id="numbersFrom1ToN"></p>
+            </li>
+            <li>Write a script that prints all the numbers from 1 to N, that are not divisible by 3 and 7 at the same time.
+                <br />
+                <label for="enteredN">Enter number N:</label>
+                <input id="enteredN" type="number" />
+                <button onclick="printNumbersNotDivisibleBy5And7()" >Find Numbers </button>
+                <p id="numbersPrinted"></p>
+            </li>
+            <li>Write a script that finds the max and min number from a sequence of numbers.
+                <br />
+                <label for="numbers">Enter sequence of numbers:</label>
+                <input id="numbers" type="text" />
+                <button onclick="findMinAndMax()" >Find Min And Max Number </button>
+                <p id="minAndMaxNumber"></p>
+            </li>
+            <li>Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects.
+                <br />
+                <label for="doc">Document:</label>
+                <input id="doc" type="radio" name="choose" value="document" checked="checked" />
+                <label for="win">Window:</label>
+                <input id="win" type="radio" name="choose" value="window" />
+                <label for="nav">Navigator:</label>
+                <input id="nav" type="radio" name="choose" value="navigator"  />
+                <button onclick="findProperties()" >Find Min And Max Properties </button>
+                <br />
+                <p id="properties" ></p>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
